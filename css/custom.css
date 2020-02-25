@@ -1,0 +1,36 @@
+.container {
+    display: inline-block;
+    width: 100%;
+}
+    .container.hero {
+        background-image: url(../img/comingsoon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container.footer {
+        background-color: #36f;
+    }
+    .hero-row {
+        display: inline-block;
+        width: 600px;
+        margin-left: calc(50% - 300px);    
+    }
+    .container > .row {
+        display: inline-block;
+        width: 1000px;
+        margin-left: calc(50% - 500px);
+    }
+        .container > .row > .left{
+            display: inline-block;
+            width: 50%;
+            float: left;
+            background-color: crimson;
+
+        }
+        .container > .row > .right{
+            display: inline-block;
+            width: 40%; 
+            float: right;
+            background-color: darkgreen;
+        }
