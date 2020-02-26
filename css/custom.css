@@ -1,12 +1,15 @@
+/* structure */
 .container {
     display: inline-block;
     width: 100%;
+    padding: 80px 0;
 }
     .container.hero {
         background-image: url(../img/comingsoon.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        padding-bottom: 20px;
     }
     .container.footer {
         background-color: #36f;
@@ -14,7 +17,8 @@
     .hero-row {
         display: inline-block;
         width: 600px;
-        margin-left: calc(50% - 300px);    
+        margin-left: calc(50% - 300px); 
+        text-align: center;   
     }
     .container > .row {
         display: inline-block;
@@ -34,3 +38,45 @@
             float: right;
             background-color: darkgreen;
         }
+/* hero section */
+.hero-row > .logo {
+    display: inline-block;
+    margin-bottom: 40px;
+    height: 40px;
+    
+}
+.hero-row > h1 {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 64px;
+    line-height: 60px;
+    
+}
+.hero-row > p {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    color: #dddddd;
+
+}
+.hero-row > .clock {
+    display: inline-block;
+    width: 100%;
+    margin: 40px 0;
+}
+.hero-row > .form {
+    display: inline-block;
+    width: 90%;
+    margin: 0 5% 10px;
+    /* background-color: greenyellow; */
+    
+}
+.hero-row > .mouse {
+    display: inline-block;
+    
+}
+
