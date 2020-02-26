@@ -29,21 +29,20 @@
             display: inline-block;
             width: 50%;
             float: left;
-            background-color: crimson;
+            /* background-color: crimson; */
 
         }
         .container > .row > .right{
             display: inline-block;
             width: 40%; 
             float: right;
-            background-color: darkgreen;
+            /* background-color: darkgreen; */
         }
 /* hero section */
 .hero-row > .logo {
     display: inline-block;
     margin-bottom: 40px;
-    height: 40px;
-    
+    height: 40px;   
 }
 .hero-row > h1 {
     display: inline-block;
@@ -80,3 +79,27 @@
     
 }
 
+/* content section */
+.content h2 {
+    display: inline-block;
+    width: 100%;
+    /* background-color: red; */
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.content p {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 20px 0;
+    color: #777;
+}
+.content p > a {
+    display: inline;
+    color: #ea1e63;
+    text-transform: none;
+}
