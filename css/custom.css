@@ -5,20 +5,24 @@
     padding: 80px 0;
 }
     .container.hero {
+        background-color: #36f;
         background-image: url(../img/comingsoon.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding-bottom: 20px;
+        padding-bottom: 20px; 
+    }
+    .container.content{
+        background-color: #fff;
     }
     .container.footer {
         background-color: #36f;
     }
-    .hero-row {
+    .container >.hero-row {
         display: inline-block;
         width: 600px;
         margin-left: calc(50% - 300px); 
-        text-align: center;   
+        text-align: center;  
     }
     .container > .row {
         display: inline-block;
@@ -30,36 +34,66 @@
             width: 50%;
             float: left;
             /* background-color: crimson; */
-
-        }
+         }
         .container > .row > .right{
             display: inline-block;
             width: 40%; 
             float: right;
             /* background-color: darkgreen; */
         }
+
+@media (max-width: 1100px) {
+    .container > .row {
+        width: 800px;
+        margin-left: calc(50% - 400px);
+    }
+} 
+
+@media (max-width: 900px) {
+    .container > .row {
+        width: 600px;
+        margin-left: calc(50% - 300px);
+    }
+}
+
+@media (max-width: 700px) {
+    .container > .hero-row,
+    .container > .row {
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+        .container > .row > .left {
+            width: 100%;
+            margin-bottom: 80px;
+        }
+        .container > .row > .right {
+            width: 100%;
+        }
+}
+
 /* hero section */
 .hero-row > .logo {
     display: inline-block;
+    height: 40px;
     margin-bottom: 40px;
-    height: 40px;   
 }
 .hero-row > h1 {
     display: inline-block;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     text-transform: uppercase;
     color: #000000;
     font-size: 64px;
     line-height: 60px;
-    
-}
+    }
 .hero-row > p {
     display: inline-block;
     width: 100%;
     font-size: 20px;
     line-height: 30px;
     color: #dddddd;
+    margin-bottom: 40px;
 
 }
 .hero-row > .clock {
@@ -83,18 +117,16 @@
 .content h2 {
     display: inline-block;
     width: 100%;
-    /* background-color: red; */
+    /* background-color: red; */ 
     text-transform: uppercase;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
 }
 .content p {
     display: inline-block;
     width: 100%;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     margin: 20px 0;
     color: #777;
 }
