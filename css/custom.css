@@ -2,7 +2,7 @@
 .container {
     display: inline-block;
     width: 100%;
-    padding: 80px 0;
+    padding: 40px 0;
 }
     .container.hero {
         background-color: #36f;
@@ -10,7 +10,8 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding-bottom: 20px; 
+        padding-bottom: 0px;
+
     }
     .container.content{
         background-color: #fff;
